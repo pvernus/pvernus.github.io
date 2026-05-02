@@ -1,21 +1,26 @@
 project:
   type: website
+  resources:
+    - profile-dark.jpg
 
 website:
-  title: "website"
+  title: "Paul Vernus"
+  site-url: https://pvernus.github.io
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    background: "#F4F4F4"
+    foreground: "dark"
+    llms-txt: true
+    search: true
+    right:
+      - cv.qmd
+      - text: "Help"
+        href: blog/index.qmd
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      light: [journal, brand]
+      dark: [darkly, brand]
+    respect-user-color-scheme: true
     css: styles.css
-    toc: true
-
-
-
+    toc: false

@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:chrisblattman.com)",
+      "Bash(cmd /c \"Rscript -e \\\\\"library\\(targets\\); tar_manifest\\(\\)\\\\\"\" 2>&1)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/pauvernu/Documents/R/chap_one/.claude/agents/**)",
+      "Bash(done)",
+      "Read(//c/Users/pauvernu/Seafile/library/chap_one_data/data/outcome/**)",
+      "Read(//c/Users/pauvernu/Seafile/library/chap_one_data/source/outcome/crs/**)",
+      "WebSearch",
+      "Bash(\"C:/Program Files/R/R-4.4.2/bin/Rscript.exe\" scripts/_analyze_task.R)",
+      "Bash(\"/c/Program Files/R/R-4.5.2/bin/Rscript.exe\" \"C:/Users/pauvernu/Documents/R/chap_one/scripts/_diag_2005_2006.R\" 2>&1)",
+      "Bash(python -c \"import pypdf; print\\(''pypdf ok''\\)\")",
+      "Bash(python -c \"import pdfminer; print\\(''pdfminer ok''\\)\")",
+      "Bash(python -c \"import fitz; print\\(''pymupdf ok''\\)\")",
+      "WebFetch(domain:grantmcdermott.com)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "beaver-zotero"
+  ]
+}

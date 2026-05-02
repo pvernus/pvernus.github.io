@@ -1,1 +1,50 @@
 /* css styles */
+
+/* === Base (light mode) === */
+body {
+  background-color: #F4F4F4;
+}
+
+a {
+  color: #5c1e4c;
+}
+
+a:hover {
+  color: #5c1e4c;
+  opacity: 0.75;
+}
+
+/* === Dark mode: keep same visual appearance === */
+body.quarto-dark {
+  background-color: #F4F4F4 !important;
+  color: #333333 !important;
+}
+
+body.quarto-dark main,
+body.quarto-dark .quarto-container,
+body.quarto-dark .page-columns,
+body.quarto-dark footer {
+  background-color: #F4F4F4 !important;
+  color: #333333 !important;
+}
+
+body.quarto-dark a {
+  color: #5c1e4c !important;
+}
+
+body.quarto-dark a:hover {
+  color: #5c1e4c !important;
+  opacity: 0.75;
+}
+
+/* === Dark-mode-only elements === */
+
+/* Deezer about link: hide in light mode */
+body.quarto-light .about-link[href*="deezer"] {
+  display: none;
+}
+
+/* Help navbar item: hide in light mode */
+body.quarto-light .navbar-nav li:has(a[href*="blog"]) {
+  display: none;
+}

@@ -1,0 +1,10 @@
+---
+title: "Help"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: table
+toc: false
+---
+
+*Here, you will find the works of others who have helped me figure out what it might entail to lead a joyful existence as [children of a modest star](https://www.sup.org/books/politics/children-modest-star). Social ties, food, physical activity, and music also help.*

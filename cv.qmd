@@ -1,0 +1,23 @@
+---
+title: "CV"
+toc: false
+---
+
+<p>
+  <a href="https://pvernus.github.io/cv/cv.pdf"
+     class="btn btn-sm btn-outline-secondary"
+     target="_blank" download>
+    Download PDF
+  </a>
+</p>
+
+<iframe src="https://pvernus.github.io/cv/cv.pdf"
+        title="Curriculum Vitae"
+        width="100%"
+        height="900px"
+        style="border: none; display: block;">
+</iframe>
+
+<p style="font-size: 0.85rem; color: #888; margin-top: 0.5rem;">
+  If the PDF does not display, <a href="https://pvernus.github.io/cv/cv.pdf" target="_blank">open it directly</a>.
+</p>

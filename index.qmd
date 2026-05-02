@@ -1,7 +1,40 @@
 ---
-title: "website"
+title: "Bonjour !"
+about:
+  template: jolla
+  image: profile.jpg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:paul.vernus@ik.me
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/paul-vernus-09538214b
+    - icon: github
+      text: Github
+      href: https://github.com/pvernus
+    - icon: music-note
+      text: Deezer
+      href: https://www.deezer.com/fr/profile/6782978503      
 ---
 
-This is a Quarto website.
+I currently work as a PhD candidate in Economics at the Centre d'études et de recherches sur le développement international ([CERDI](https://cerdi.uca.fr/english-version#/admin)), in Clermont-Ferrand, France.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I am interested in how climate-related risks influences the international architecture of development finance, especially its delivery through implementing partners. My research covers topics at the intersection of political economy, climate change adaptation, and disaster risk reduction.
+
+My work is supported by the Fondation pour les études et recherches sur le développement international ([FERDI](https://ferdi.fr/en/ferdi)) and the Banque de France.
+
+<script>
+(function () {
+  function swapProfileImage() {
+    var img = document.querySelector('.about-image');
+    if (!img) return;
+    img.src = document.body.classList.contains('quarto-dark')
+      ? 'profile-dark.jpg'
+      : 'profile.jpg';
+  }
+  swapProfileImage();
+  new MutationObserver(swapProfileImage)
+    .observe(document.body, { attributes: true, attributeFilter: ['class'] });
+})();
+</script>
