@@ -1,12 +1,12 @@
 ---
-title: "Music"
-date-modified: 2026-05-02
+title: "Watch"
+date-modified: 2026-05-03
 toc: false
 ---
 
 ```{=html}
 <input type="text" id="table-filter" class="form-control form-control-sm mb-3"
-       placeholder="Filter by title, artist, category…"
+       placeholder="Filter by title, creator, category…"
        oninput="filterTable()">
 <script>
 function filterTable() {
@@ -18,4 +18,4 @@ function filterTable() {
 </script>
 ```
 
-{{< include _music.md >}}
+{{< include _watch.md >}}

@@ -13,9 +13,6 @@ about:
     - icon: github
       text: Github
       href: https://github.com/pvernus
-    - icon: substack
-      text: Substack
-      href: https://substack.com/@paulvernus?r=1pwzw7
     - icon: music-note
       text: Deezer
       href: https://www.deezer.com/fr/profile/6782978503

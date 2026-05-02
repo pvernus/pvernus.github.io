@@ -21,8 +21,12 @@ via GitHub Actions on every push to `main`.
 | `profile-dark.jpg` | Dark mode profile photo (swapped by JS in index.qmd) |
 | `.github/workflows/publish.yml` | CI/CD — renders and deploys to GitHub Pages |
 | `blog/index.qmd` | Blog listing page (the "Help" nav item) |
-| `blog/posts/*/index.qmd` | Individual blog post pages (books, articles, movies, etc.) |
-| `blog/posts/*/_*.md` | Editable data tables — one per post, included via `{{< include >}}` |
+| `blog/posts/read/index.qmd` | Read page — books + articles in one table (Title, Author, Year, ISBN, Category) |
+| `blog/posts/read/_read.md` | Read data table — books rows + article rows merged |
+| `blog/posts/watch/index.qmd` | Watch page — movies, TV shows, videos in one table (Title, Creator, Year, Category) |
+| `blog/posts/watch/_watch.md` | Watch data table |
+| `blog/posts/listen/index.qmd` | Listen page — music/radio (Title, Artist, Date, Category) |
+| `blog/posts/listen/_listen.md` | Listen data table |
 | `garden.qmd` | Digital garden landing page — introduces the concept and note types |
 | `_garden-workflow.md` | Internal workflow reference — tooling, note conventions, daily workflow (not published) |
 | `_pre-render.py` | Quarto pre-render hook — auto-generates `garden/sources/*.qmd` from Zotero `_bib/library.json` |
@@ -79,8 +83,11 @@ publish "Add new book to list"
 - All other colors/fonts are forced identical in both modes via `body.quarto-dark` overrides
 
 ### Blog Posts
-- 6 posts under `blog/posts/`: books, articles, movies, tv-shows, videos, music
-- **To add a row:** edit `blog/posts/<type>/_<type>.md`, add new row at the **top**, then update `date-modified:` in that post's `index.qmd`
+- 3 posts under `blog/posts/`: read, watch, listen
+- **Read** (`_read.md`): Title | Author | Year | ISBN | Category — books and articles merged; for articles, embed the URL in the Title as a markdown link
+- **Watch** (`_watch.md`): Title | Creator | Year | Category — movies, TV shows, and videos merged; add type tag (Movie / TV Show / Video) to Category; for videos, embed the URL in the Title
+- **Listen** (`_listen.md`): Title | Artist | Date | Category — music and radio
+- **To add a row:** edit `blog/posts/<post>/_<post>.md`, add new row at the **top**, then update `date-modified:` in that post's `index.qmd`
 - Each table has a live filter input (type to filter any column)
 - Category badges: use `<span class="tag">Label</span>` in the Category column
 

@@ -1,6 +1,6 @@
 ---
-title: "Books"
-date-modified: 2026-05-02
+title: "Read"
+date-modified: 2026-05-03
 toc: false
 ---
 
@@ -18,4 +18,4 @@ function filterTable() {
 </script>
 ```
 
-{{< include _books.md >}}
+{{< include _read.md >}}
