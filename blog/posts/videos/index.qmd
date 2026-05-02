@@ -1,0 +1,21 @@
+---
+title: "Videos"
+date-modified: 2026-05-02
+toc: false
+---
+
+```{=html}
+<input type="text" id="table-filter" class="form-control form-control-sm mb-3"
+       placeholder="Filter by title, creator, category…"
+       oninput="filterTable()">
+<script>
+function filterTable() {
+  var q = document.getElementById('table-filter').value.toLowerCase();
+  document.querySelectorAll('table tbody tr').forEach(function(r) {
+    r.style.display = r.textContent.toLowerCase().includes(q) ? '' : 'none';
+  });
+}
+</script>
+```
+
+{{< include _videos.md >}}

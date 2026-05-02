@@ -3,6 +3,17 @@
 /* === Base (light mode) === */
 body {
   background-color: #F4F4F4;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+}
+
+footer.footer,
+footer.footer .nav-footer {
+  background-color: #F4F4F4 !important;
+  color: #333333 !important;
+}
+
+footer.footer .nav-link {
+  color: #5c1e4c !important;
 }
 
 a {
@@ -14,6 +25,10 @@ a:hover {
   opacity: 0.75;
 }
 
+blockquote {
+  color: #450920;
+}
+
 /* === Dark mode: keep same visual appearance === */
 body.quarto-dark {
   background-color: #F4F4F4 !important;
@@ -23,7 +38,9 @@ body.quarto-dark {
 body.quarto-dark main,
 body.quarto-dark .quarto-container,
 body.quarto-dark .page-columns,
-body.quarto-dark footer {
+body.quarto-dark footer,
+body.quarto-dark footer.footer,
+body.quarto-dark footer.footer .nav-footer {
   background-color: #F4F4F4 !important;
   color: #333333 !important;
 }
@@ -35,6 +52,61 @@ body.quarto-dark a {
 body.quarto-dark a:hover {
   color: #5c1e4c !important;
   opacity: 0.75;
+}
+
+body.quarto-dark blockquote {
+  color: #450920 !important;
+}
+
+/* Site search — catch all Algolia (aa-*) and Quarto search elements */
+body.quarto-dark [class*="aa-"],
+body.quarto-dark [class*="search-result"],
+body.quarto-dark #quarto-search-results {
+  background-color: #F4F4F4 !important;
+  color: #333333 !important;
+}
+
+/* Blog listing filter input */
+.quarto-listing-filter .form-control,
+.quarto-listing-filter .input-group-text {
+  background-color: #F4F4F4 !important;
+  color: #333333 !important;
+  border-color: #ced4da !important;
+}
+
+/* Navbar — consistent across both modes */
+.navbar {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .navbar-title {
+  color: #5c1e4c !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  font-family: "News Cycle", "Arial Narrow Bold", sans-serif !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+/* Hide blog listing table header */
+.quarto-listing table thead {
+  display: none;
+}
+
+/* Category badges */
+.tag {
+  display: inline-block;
+  padding: 0.15em 0.5em;
+  margin: 0.1em;
+  border-radius: 0.25em;
+  font-size: 0.78em;
+  background-color: rgba(92, 30, 76, 0.1);
+  color: #5c1e4c;
+  border: 1px solid rgba(92, 30, 76, 0.3);
+  white-space: nowrap;
 }
 
 /* === Dark-mode-only elements === */

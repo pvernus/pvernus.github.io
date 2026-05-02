@@ -1,0 +1,16 @@
+---
+title: "Colophon"
+toc: false
+---
+
+This site is built with [Quarto](https://quarto.org) and hosted on
+[GitHub Pages](https://pages.github.com), deployed automatically via
+[GitHub Actions](https://github.com/features/actions) on every push.
+The source is public at
+[github.com/pvernus/pvernus.github.io](https://github.com/pvernus/pvernus.github.io).
+
+It has been online since May 2026.
+
+**Privacy.** No tracking. No analytics. No cookies.
+
+**Sustainability.** Static HTML served from GitHub's CDN. No server, no database.

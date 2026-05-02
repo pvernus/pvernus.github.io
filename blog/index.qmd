@@ -1,10 +1,21 @@
 ---
-title: "Help"
+title: "Hi again"
 listing:
   contents: posts
-  sort: "date desc"
+  sort: "date-modified desc"
   type: table
+  fields: [title]
+  field-display-names:
+    title: "Menu"
+  filter-ui: false
+  sort-ui: false
 toc: false
 ---
 
-*Here, you will find the works of others who have helped me figure out what it might entail to lead a joyful existence as [children of a modest star](https://www.sup.org/books/politics/children-modest-star). Social ties, food, physical activity, and music also help.*
+> *So you probably didn't end up here by chance.*
+>
+> *You might have been browsing the web, looking to escape the existential anxiety that comes with living on Earth. Here are some of the art pieces that have helped me on my own journey.*
+>
+> *Feel free to [reach out](mailto:paul.vernus@ik.me) to share yours.*
+
+# Start [here](https://www.nts.live/explore)

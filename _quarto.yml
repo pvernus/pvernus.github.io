@@ -9,18 +9,21 @@ website:
   navbar:
     background: "#F4F4F4"
     foreground: "dark"
+    search: false
     llms-txt: true
-    search: true
     right:
       - cv.qmd
       - text: "Help"
         href: blog/index.qmd
+  page-footer:
+    right:
+      - text: "Colophon"
+        href: colophon.qmd
 
 format:
   html:
     theme:
       light: [journal, brand]
       dark: [darkly, brand]
-    respect-user-color-scheme: true
     css: styles.css
     toc: false
