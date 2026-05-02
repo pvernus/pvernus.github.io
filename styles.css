@@ -18,11 +18,13 @@ footer.footer .nav-link {
 
 a {
   color: #5c1e4c;
+  text-decoration: none;
 }
 
 a:hover {
   color: #5c1e4c;
   opacity: 0.75;
+  text-decoration: underline;
 }
 
 blockquote {

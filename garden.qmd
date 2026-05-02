@@ -1,0 +1,17 @@
+---
+title: "Garden"
+toc: false
+---
+
+This page is an experiment. It draws inspiration from two sources:
+
+- the [IndieWeb](https://indieweb.org) movement:
+    - the [POSSE](https://indieweb.org/POSSE) (Publish on your Own Site, Syndicate Elsewhere) principle
+    - the [digital garden](https://indieweb.org/digital_garden) metaphor
+- Adam Tooze's [writing in medias res](https://adamtooze.substack.com/p/chartbook-on-shutdown-2-writing-in)
+
+The primary audience is myself. The goal is to encourage serendipitous reading and to archive thought trails. There is no predefined hierarchical or timeline-based order. I kept the structure as simple as possible:
+
+- *Writing notes*: thought fragments based on my readings with hyperlinks to other notes and sources.
+- *Source notes*: metadata from a Zotero document + a list of writing notes in which the source appears.
+

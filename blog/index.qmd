@@ -12,10 +12,8 @@ listing:
 toc: false
 ---
 
-> *So you probably didn't end up here by chance.*
->
-> *You might have been browsing the web, looking to escape the existential anxiety that comes with living on Earth. Here are some of the art pieces that have helped me on my own journey.*
->
-> *Feel free to [reach out](mailto:paul.vernus@ik.me) to share yours.*
+> *Navigating the existential anxiety that comes with life on Earth is not always easy.*
+> *Below are some art pieces that have helped me on my personal journey.*
+> *Please [reach out](mailto:paul.vernus@ik.me) to share yours.*
 
 # Start [here](https://www.nts.live/explore)

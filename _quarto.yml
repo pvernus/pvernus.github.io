@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - profile-dark.jpg
+  pre-render: _pre-render.py
 
 website:
   title: "Paul Vernus"
@@ -13,6 +14,7 @@ website:
     llms-txt: true
     right:
       - cv.qmd
+      - garden.qmd
       - text: "Help"
         href: blog/index.qmd
   page-footer:
