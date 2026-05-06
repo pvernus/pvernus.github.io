@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-Quarto pre-render script: auto-generates and updates source notes in garden/sources/
-from a Better BibTeX JSON export of the Zotero library (_bib/library.json).
+Quarto pre-render script:
+1. Auto-renames writing notes to YYYY-MM-DD[-N].qmd and syncs their title: field.
+2. Auto-generates and updates source notes in garden/sources/ from a Better BibTeX
+   JSON export of the Zotero library (_bib/library.json).
 
 Registered in _quarto.yml as:
   project:
@@ -14,6 +16,7 @@ is updated on every subsequent render. "Related to" is populated from Zotero con
 
 import json
 import re
+from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -21,6 +24,79 @@ LIBRARY_JSON = Path("_bib/library.json")
 NOTES_DIR = Path("garden/notes")
 SOURCES_DIR = Path("garden/sources")
 STALE_HOURS = 24
+
+DATE_STEM_RE = re.compile(r'^\d{4}-\d{2}-\d{2}(?:-(\d+))?$')
+
+
+# ---------------------------------------------------------------------------
+# Writing note renaming
+# ---------------------------------------------------------------------------
+
+def _parse_fm_date(text):
+    m = re.search(r'^date:\s*["\']?(\d{4}-\d{2}-\d{2})["\']?', text, re.MULTILINE)
+    return m.group(1) if m else None
+
+
+def _set_fm_title(text, new_title):
+    return re.sub(
+        r'^(title:\s*).*$',
+        f'\\1"{new_title}"',
+        text,
+        count=1,
+        flags=re.MULTILINE,
+    )
+
+
+def rename_writing_notes():
+    """Rename notes to YYYY-MM-DD[-N].qmd and sync the title: field.
+
+    Single note on a date  → YYYY-MM-DD.qmd  / title: "YYYY-MM-DD"
+    Multiple notes on date → YYYY-MM-DD-1.qmd, YYYY-MM-DD-2.qmd, …
+    Notes without a date: field are left untouched.
+    Already-dated filenames keep their relative order; new (undated) filenames
+    are appended in alphabetical order.
+    """
+    notes = []
+    for path in NOTES_DIR.glob("*.qmd"):
+        text = path.read_text(encoding="utf-8")
+        date = _parse_fm_date(text)
+        if date is None:
+            continue
+        notes.append((path, date, text))
+
+    by_date = defaultdict(list)
+    for path, date, text in notes:
+        by_date[date].append((path, text))
+
+    for date, group in by_date.items():
+        def sort_key(item):
+            path, _ = item
+            m = DATE_STEM_RE.match(path.stem)
+            if m:
+                return (0, int(m.group(1)) if m.group(1) else 1, path.stem)
+            return (1, 0, path.stem)
+
+        group.sort(key=sort_key)
+        n = len(group)
+
+        for i, (path, text) in enumerate(group):
+            new_stem = date if n == 1 else f"{date}-{i + 1}"
+            new_path = NOTES_DIR / f"{new_stem}.qmd"
+            new_text = _set_fm_title(text, new_stem)
+
+            needs_rename = new_path != path
+            needs_title  = new_text != text
+
+            if needs_rename and needs_title:
+                new_path.write_text(new_text, encoding="utf-8")
+                path.unlink()
+                print(f"garden: renamed  {path.name} → {new_path.name}")
+            elif needs_rename:
+                path.rename(new_path)
+                print(f"garden: renamed  {path.name} → {new_path.name}")
+            elif needs_title:
+                path.write_text(new_text, encoding="utf-8")
+                print(f"garden: retitled {path.name}")
 
 
 # ---------------------------------------------------------------------------
@@ -199,6 +275,10 @@ def update_cited_in(content, citing_notes):
 # ---------------------------------------------------------------------------
 
 def main():
+    # Rename notes first so scan_citations picks up the final filenames.
+    if NOTES_DIR.exists():
+        rename_writing_notes()
+
     if not check_library():
         return
 

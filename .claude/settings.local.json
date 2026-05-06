@@ -17,7 +17,8 @@
       "Bash(python -c \"import pypdf; print\\(''pypdf ok''\\)\")",
       "Bash(python -c \"import pdfminer; print\\(''pdfminer ok''\\)\")",
       "Bash(python -c \"import fitz; print\\(''pymupdf ok''\\)\")",
-      "WebFetch(domain:grantmcdermott.com)"
+      "WebFetch(domain:grantmcdermott.com)",
+      "PowerShell(zot *)"
     ]
   },
   "enabledMcpjsonServers": [

@@ -1,0 +1,70 @@
+---
+type: writing
+title: "Réparations"
+date: 2026-04-17
+tags: [reparations, care, political-philosophy, ecology, utopia, FR]
+---
+
+Le point de départ est une [émission](https://www.radiofrance.fr/franceinter/podcasts/la-20e-heure/la-20eme-heure-du-mercredi-01-avril-2026-8398336) de *La 20e heure* sur France Inter avec Maxime Rovere. Après l'écoute de son choix musical, [*Come healing*](https://link.deezer.com/s/331ncaiMDkeFb9Lvyn0Pz) de Leonard Cohen, il explique que cette chanson appelle à la "réparation" (33 min).
+
+> Je me rends compte que la chanson a été utilisée dans la bande son de la série *Sons of Anarchy*. Il y aurait un parallèle intéressant à faire avec *Tout pour tout le monde*, le livre que j'aborde plus bas.
+
+Il explique que depuis les Lumières, on a cru au "progrès", c'est-à-dire que le développement des sciences et des techniques allait améliorer la condition humaine. Selon lui, on se rend compte aujourd'hui que "ce n'est pas vraiment ce qu'il s'est passé" et surtout que cela a abouti à "mettre en crise l'écosystème terre".[^1]
+
+[^1]: On pourrait discuter son constat selon lequel le développement des sciences et des techniques n'a pas amélioré la situation des êtres humains.
+
+> Lien avec les thèses de Bruno Latour [@latour2017] et le livre *Abondance et Liberté* de Pierre Charbonnier [@charbonnier2020a].
+
+Toujours selon lui, ce à quoi on peut croire aujourd'hui, c'est à la réparation du monde. Il faut faire remonter à la surface ces ombres pour qu'elles viennent apaiser, se réparer, se cicatriser. Paraphrase des paroles de Léonard Cohen : « le cœur du dessous vient se soigner grâce au cœur du dessus ». Un dialogue intérieur, très proche de ce que l'on fait en philosophie.
+
+> Cette idée d'apaiser, réparer, cicatriser; ainsi que des profondeurs me fait penser à un livre que m'a petite m'a prêté : *Non-noyées : Leçons féministes noires apprises auprès des mammifères marines* par Alexis Pauline Gumbs [@gumbs2024].
+
+Que Maxime Rovere parle de « réparations » m'a fait tilter. Je ne m'attendais pas à ce qu'il utilise ce mot. Je connais l'auteur pour son livre *Le Clan Spinoza* [@rovere2017], dont j'avais apprécié l'approche : montrer que la philosophie de Spinoza, souvent perçue comme celle d'un génie incompris et isolé, est en réalité le fruit de son environnement : les discussions avec son groupe d'amis, qui ne sont pour la plupart pas des intellectuels de "métier", ainsi que la situation politique et économique en Hollande, et plus largement en Europe.
+
+Ma première rencontre avec le concept de "réparations" s'est faite dans le contexte des enjeux contemporains liés à l'esclavage et au colonialisme. Mon sentiment initial était le scepticisme. Sans jamais vraiment y avoir réfléchi, j'avais l'impression que c'était une idée "idéaliste", en opposition à une approche "réaliste" qui prendrait davantage en compte les contraintes matérielles et politiques. Un idéalisme donc plutôt péjoratif, qui renvoyait davantage à la naïveté qu'à l'ambition. Les implications politiques me semblaient difficilement praticables au regard des réalités techniques et (géo)politiques. Comment déterminer qui doit quoi à qui ? Comment mettre en œuvre de telles politiques alors que les discussions actuelles tendent à appeler des approches "réalistes" face à la diplomatie transactionnelle de Trump ?
+
+> À quelles réalités fais-je référence ? Celles de mon point de vue. Tout le monde n'a pas forcément le même. Voir notamment l'opposition polycrisis vs. polyunity de Yuen Yuen Ang [@ang2026a].
+
+D'un autre côté, je me rends aussi compte que pour l'instant je n'ai pas encore rencontré de réponse radicale solide en réponse aux tendances actuelles.
+
+> Les approches qui me parlent le plus actulellement sont les références au mouvement des Non-alignés, par [Progressive International](https://progressive.international/wire/2023-09-01-pi-briefing-no-35-we-face-neither-east-nor-west-we-face-forward/en/) par exemple. J'ai aussi beaucoup d'espoir dans le livre *Contre l'écologie de guerre* de Vincent Rissier [@rissier2026a], que je n'ai pas encore lu, mais qui semble proposer une approche anti-capitaliste et anti-impérialiste à celle, "réaliste" de Pierre Charbonnier.
+
+En y regardant de plus près, je me rends bien compte que ce scepticisme pour le concept de "réparations" porte la marque de ma propre position privilégiée au sein des systèmes de domination actuels. C'est un réalisme de confort.
+
+Deux livres me sont venues en tête lorsque j'ai commencé à réfléchir à cette idée de réparations, à la suite de l'écoute de l'émission de radio :
+
+1. Le livre que je suis en train de lire en ce moment : *Tout pour tout le monde : Une histoire orale de la Commune de New York 2052–2072*, par M.E. O'Brien et Eman Abdelhadi [@obrien2022].
+2. L'autre livre s'appelle *Reconsidering reparations: worldmaking in the case of climate crisis* par Olúfẹmi O. Táíwò [@taiwo2022e]. Je ne l'ai pas encore lu, mais j'aimerais poursuivre le tissage dans une future note.
+
+## *Tout pour tout le monde*
+
+Le livre est une recommandation que j'ai découverte dans une vidéo Short de la chaîne YouTube [Margorito](https://www.youtube.com/@margorito1871), que je suis de loin.[^2] Le livre imagine un futur où les sociétés humaines sont organisées en Communes, auto-gérées.[^3] Au sein de ces sociétés communautés, réparer ne veut pas dire payer une compensation. C'est un processus actif de reconstruction du soin et du lien social. On sent l'influence de la pensée du *care* sur les autrices. On comprend que les transformations pour arriver à la situation actuelle ont été chaotiques et douloureuses. Les gens font face à des traumas importants. Y faire face est devenu un objectif en soi, autour duquel la société s'organise.
+
+[^2]: C'est le même intérêt que pour des romans d'anticipation comme *Le Ministère du future* de Kim Stanley Robinson [@robinson2020] et *Le Déluge* de Stephen Markley [@markley2024].
+
+[^3]: Je connais mal, mais je pense que le livre s'inspire notamment des idées de Murray Bookchin autour du communalisme.
+
+> Encore une fois, cela m'a fait penser à *Non-noyées* de Alexis Pauline Gumbs [@gumbs2024], qui aborde la question du *care* et de la reconstruction face aux agressions continues de son environnement.
+
+Un point important est que ce processus de réparation semble survenir *après* la guerre civile et la destruction du système actuel. L'ordre ancien a été aboli, anéanti. Les inégalités systémiques à l'origine des dommages ont été éliminées.
+
+> Dans le livre, la chute du système est notamment due à l'accumulation de crises économiques et politiques, ainsi qu'à des conflits entre puissances. Cela m'a rappelé ce passage d'un article récent de Pierre Charbonnier [@charbonnier2022a; @charbonnier2026a] : « Dans le maelström de la guerre, se pourrait-il que la révolution électrotechnique des énergies vertes sorte gagnante ? » (...) « La destruction mutuelle des infrastructures fossiles par les armées américaines et iraniennes dans la région du Golfe est sans doute le plus grand événement d'annihilation de capital fossile de l'histoire. »
+
+M. E. O'Brien et Eman Abdelhadi ne mentionnent donc pas de mécanismes institutionnels de réparation qui auraient permis d'aboutir à la situation décrite. La (re)construction s'est faite sans les adversaires (les forces fédérales et fascistes du livre). Cela pose la question de savoir s'il est possible de mener une véritable politique de réparation dans un système d'oppression, ou s'il faut attendre "l'effondrement" et/ou l'avènement de la révolution. Peut-il y avoir une approche "réaliste" des réparations dans le système actuel, qui prenne en considération les contraintes matérielles et politiques tout en adoptant une approche proche de la théorie du *care* ? Quelle stratégie politique pour une politique (internationaliste, ou au moins internationale) des réparations ?
+
+---
+
+## En attente sur le métier à tisser
+
+### Concepts
+
+### Textes
+
+- Notes sur *Abondance et Liberté* de Pierre Charbonnier [@charbonnier2020a]
+- Notes sur *Où atterir ?* de Bruno Latour [@latour2017]
+- Discussion sur la base des travaux de Olúfẹmi O. Táíwò sur les réparations [@taiwo2022e]
+
+### Questions
+
+- Peut-il y avoir une approche "réaliste" des réparations dans le système actuel, qui prenne en considération les contraintes matérielles et politiques tout en adoptant une approche proche de la théorie du *care* ?
+- Quelle stratégie politique pour une politique (internationaliste, ou au moins internationale) des réparations ?
