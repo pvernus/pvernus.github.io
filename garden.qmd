@@ -12,6 +12,108 @@ This page is an experiment. It draws inspiration from two sources:
 
 The primary audience is myself. The goal is to encourage serendipitous reading and to archive thought trails. There is no predefined hierarchical or timeline-based order. I kept the structure as simple as possible:
 
-- *Writing notes*: thought fragments based on my readings with hyperlinks to other notes and sources.
-- *Source notes*: metadata from a Zotero document + a list of writing notes in which the source appears.
+- <span style="font-weight:bold;color:#90ee90">Writing notes</span>: thought fragments based on my readings with hyperlinks to other notes and sources.
+- <span style="font-weight:bold;color:#2d6a4f">Source notes</span>: metadata from a Zotero document + a list of writing notes in which the source appears.
+
+```{ojs}
+//| echo: false
+
+d3 = require("d3@7")
+
+graphData = fetch("garden/links.json")
+  .then(r => r.ok ? r.json() : {nodes: [], edges: []})
+  .catch(() => ({nodes: [], edges: []}))
+
+{
+  const W = 720, H = 520;
+  const nodes = graphData.nodes.map(d => ({...d}));
+  const links = graphData.edges.map(d => ({...d}));
+
+  if (nodes.length === 0)
+    return html`<p style="color:#888;font-style:italic;margin:2rem 0">No notes yet.</p>`;
+
+  // Degree-based node radius
+  const degree = new Map(nodes.map(d => [d.id, 0]));
+  links.forEach(l => {
+    const s = l.source.id ?? l.source, t = l.target.id ?? l.target;
+    degree.set(s, (degree.get(s) || 0) + 1);
+    degree.set(t, (degree.get(t) || 0) + 1);
+  });
+  const r = d => (d.type === "writing" ? 8 : 5) + Math.sqrt(degree.get(d.id) || 0) * 2;
+
+  const svg = d3.create("svg")
+    .attr("viewBox", [0, 0, W, H])
+    .attr("width", "100%")
+    .style("font-family", "serif")
+    .style("background", "transparent");
+
+  // Arrow marker for "cites" edges
+  svg.append("defs").append("marker")
+    .attr("id", "arrow")
+    .attr("viewBox", "0 -4 8 8").attr("refX", 20).attr("refY", 0)
+    .attr("markerWidth", 5).attr("markerHeight", 5).attr("orient", "auto")
+    .append("path").attr("d", "M0,-4L8,0L0,4").attr("fill", "#888");
+
+  const sim = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d => d.id).distance(95))
+    .force("charge", d3.forceManyBody().strength(-260))
+    .force("center", d3.forceCenter(W / 2, H / 2))
+    .force("collision", d3.forceCollide(d => r(d) + 4));
+
+  const link = svg.append("g")
+    .selectAll("line").data(links).join("line")
+    .attr("stroke", d => d.type === "cites" ? "#888" : "#b7d9b7")
+    .attr("stroke-width", d => d.type === "cites" ? 1.5 : 1)
+    .attr("stroke-dasharray", d => d.type === "shared" ? "4,3" : null)
+    .attr("marker-end", d => d.type === "cites" ? "url(#arrow)" : null)
+    .attr("opacity", 0.7);
+
+  // Floating tooltip
+  const tip = d3.select("body").append("div")
+    .style("position", "absolute").style("background", "#fff")
+    .style("border", "1px solid #ccc").style("border-radius", "3px")
+    .style("padding", "3px 8px").style("font-size", "11px")
+    .style("font-family", "serif").style("pointer-events", "none")
+    .style("opacity", 0).style("max-width", "220px");
+
+  const nodeG = svg.append("g")
+    .selectAll("g").data(nodes).join("g")
+    .style("cursor", "pointer")
+    .call(d3.drag()
+      .on("start", e => { if (!e.active) sim.alphaTarget(0.3).restart(); e.subject.fx = e.subject.x; e.subject.fy = e.subject.y; })
+      .on("drag",  e => { e.subject.fx = e.x; e.subject.fy = e.y; })
+      .on("end",   e => { if (!e.active) sim.alphaTarget(0); e.subject.fx = null; e.subject.fy = null; }))
+    .on("click", (_, d) => { window.location.href = d.path; })
+    .on("mouseover", (e, d) => tip.style("opacity", 1).html(d.title))
+    .on("mousemove", e => tip.style("left", e.pageX + 12 + "px").style("top", e.pageY - 24 + "px"))
+    .on("mouseout", () => tip.style("opacity", 0));
+
+  nodeG.append("circle")
+    .attr("r", r)
+    .attr("fill", d => d.type === "writing" ? "#90ee90" : "#2d6a4f");
+
+  nodeG.append("text")
+    .text(d => d.title.length > 22 ? d.title.slice(0, 20) + "…" : d.title)
+    .attr("x", d => r(d) + 3).attr("y", 4)
+    .attr("font-size", 9).attr("fill", "#555")
+    .style("pointer-events", "none");
+
+  sim.on("tick", () => {
+    link
+      .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+      .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+    nodeG.attr("transform", d => `translate(${d.x},${d.y})`);
+  });
+
+  // Legend
+  const legend = svg.append("g").attr("transform", `translate(16,${H - 56})`);
+  [{color:"#90ee90", label:"Writing note"}, {color:"#2d6a4f", label:"Source note"}].forEach(({color, label}, i) => {
+    legend.append("circle").attr("cx", 7).attr("cy", i * 20).attr("r", 6).attr("fill", color);
+    legend.append("text").attr("x", 18).attr("y", i * 20 + 4).attr("font-size", 10).attr("fill", "#555").text(label);
+  });
+
+  invalidation.then(() => tip.remove());
+  return svg.node();
+}
+```
 

@@ -1,0 +1,22 @@
+---
+type: source
+title: "Non-noyées : Leçons féministes Noires apprises auprès des mammifères marines"
+zotero-key: gumbs2024
+tags: []
+publisher: "Les Liens Qui Liberent"
+year: 2024
+isbn: "979-10-209-2351-6"
+---
+
+**Author:** Gumbs  
+**Publisher:** Les Liens Qui Liberent  
+**Date:** 2024  
+**ISBN:** 979-10-209-2351-6
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-04-17](../notes/2026-04-17.qmd)

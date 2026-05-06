@@ -16,9 +16,12 @@ is updated on every subsequent render. "Related to" is populated from Zotero con
 
 import json
 import re
+import sys
 from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
+
+sys.stdout.reconfigure(encoding="utf-8")
 
 LIBRARY_JSON = Path("_bib/library.json")
 NOTES_DIR = Path("garden/notes")
@@ -90,10 +93,10 @@ def rename_writing_notes():
             if needs_rename and needs_title:
                 new_path.write_text(new_text, encoding="utf-8")
                 path.unlink()
-                print(f"garden: renamed  {path.name} → {new_path.name}")
+                print(f"garden: renamed  {path.name} -> {new_path.name}")
             elif needs_rename:
                 path.rename(new_path)
-                print(f"garden: renamed  {path.name} → {new_path.name}")
+                print(f"garden: renamed  {path.name} -> {new_path.name}")
             elif needs_title:
                 path.write_text(new_text, encoding="utf-8")
                 print(f"garden: retitled {path.name}")
@@ -121,7 +124,7 @@ def load_library():
     """Return (by_key, uri_to_key) where by_key maps citekey -> item dict."""
     with open(LIBRARY_JSON, encoding="utf-8") as f:
         data = json.load(f)
-    items = data.get("references", data.get("items", []))
+    items = data if isinstance(data, list) else data.get("references", data.get("items", []))
     by_key = {}
     uri_to_key = {}
     for item in items:
@@ -144,15 +147,19 @@ def load_library():
 def scan_citations():
     """Scan garden/notes/*.qmd for @citekey references.
 
-    Returns dict: citekey -> list of (path, title).
+    Returns dict: citekey -> list of (path, title), deduplicated per note.
+    Excludes @ symbols embedded in URLs (e.g. youtube.com/@user).
     """
     result = {}
     for path in sorted(NOTES_DIR.glob("*.qmd")):
         text = path.read_text(encoding="utf-8")
         m = re.search(r'^title:\s*["\']?(.+?)["\']?\s*$', text, re.MULTILINE)
         title = m.group(1).strip("\"'") if m else path.stem
-        for key in re.findall(r'@([\w:.-]+)', text):
-            result.setdefault(key, []).append((path, title))
+        seen_in_note = set()
+        for key in re.findall(r'(?<!/)@([\w:.-]+)', text):
+            if key not in seen_in_note:
+                result.setdefault(key, []).append((path, title))
+                seen_in_note.add(key)
     return result
 
 
@@ -184,6 +191,43 @@ def fmt_tags(item):
     return [k.strip() for k in str(kw).split(",") if k.strip()]
 
 
+_TYPE_LABELS = {
+    "article-journal": "Article",
+    "book": "Book",
+    "chapter": "Book chapter",
+    "report": "Report",
+    "webpage": "Webpage",
+    "blogPost": "Blog post",
+    "thesis": "Thesis",
+    "preprint": "Preprint",
+    "conferencePaper": "Conference paper",
+    "videoRecording": "Video",
+    "podcast": "Podcast",
+    "radioBroadcast": "Radio broadcast",
+    "document": "Document",
+    "magazineArticle": "Magazine article",
+    "newspaperArticle": "Newspaper article",
+}
+
+
+def fmt_info(item):
+    """Return (info_line, link_md) for the source note body."""
+    itype = _TYPE_LABELS.get(item.get("type", ""), item.get("type", ""))
+    venue = (item.get("container-title") or
+             item.get("collection-title") or
+             item.get("publisher") or
+             item.get("institution") or "")
+    info = " · ".join(p for p in [itype, venue] if p)
+    doi = item.get("DOI", "")
+    url = item.get("URL", "")
+    link = f"[DOI](https://doi.org/{doi})" if doi else (f"[URL]({url})" if url else "")
+    return info, link
+
+
+def fmt_abstract(item):
+    return (item.get("abstract") or "").strip()
+
+
 def get_related_keys(item, by_key, uri_to_key):
     """Extract connexe (related) citekeys from the Better BibTeX JSON relations field.
 
@@ -208,6 +252,71 @@ def get_related_keys(item, by_key, uri_to_key):
     elif isinstance(relations, list):
         related = [r for r in relations if isinstance(r, str) and r in by_key]
     return related
+
+
+# ---------------------------------------------------------------------------
+# Network graph data
+# ---------------------------------------------------------------------------
+
+def emit_links_json(citations, by_key):
+    """Write garden/links.json for the force-directed network visualisation.
+
+    Nodes: writing notes (type=writing) + cited source notes (type=source).
+    Edges:
+      cites   — writing note -> source note it cites
+      shared  — writing note <-> writing note sharing tags or citekeys
+    Works without by_key (library absent): source nodes get citekey as title.
+    """
+    nodes = []
+    edges = []
+    seen_sources = set()
+
+    writing_map = {}  # stem -> {tags: set, citekeys: set}
+    for path in sorted(NOTES_DIR.glob("*.qmd")):
+        text = path.read_text(encoding="utf-8")
+        m = re.search(r'^title:\s*["\']?(.+?)["\']?\s*$', text, re.MULTILINE)
+        title = m.group(1).strip("\"'") if m else path.stem
+        m = re.search(r'^tags:\s*\[([^\]]*)\]', text, re.MULTILINE)
+        raw_tags = [t.strip() for t in m.group(1).split(",")] if m else []
+        tags = [t for t in raw_tags if t]
+        citekeys = set(re.findall(r'@([\w:.-]+)', text))
+        stem = path.stem
+        nodes.append({
+            "id": stem,
+            "type": "writing",
+            "title": title,
+            "tags": tags,
+            "path": f"garden/notes/{stem}.html",
+        })
+        writing_map[stem] = {"tags": set(tags), "citekeys": citekeys}
+
+    # Source nodes + cites edges
+    for key, citing_notes in citations.items():
+        if key not in seen_sources:
+            seen_sources.add(key)
+            item = by_key.get(key, {})
+            s_title = (item.get("title", key)[:70] if item else key)
+            nodes.append({
+                "id": key,
+                "type": "source",
+                "title": s_title,
+                "path": f"garden/sources/{key}.html",
+            })
+        for path, _ in citing_notes:
+            edges.append({"source": path.stem, "target": key, "type": "cites"})
+
+    # Writing <-> writing (shared tags or shared citekeys)
+    ids = list(writing_map.keys())
+    for i, id1 in enumerate(ids):
+        for id2 in ids[i + 1:]:
+            d1, d2 = writing_map[id1], writing_map[id2]
+            if (d1["tags"] & d2["tags"]) or (d1["citekeys"] & d2["citekeys"]):
+                edges.append({"source": id1, "target": id2, "type": "shared"})
+
+    out = NOTES_DIR.parent / "links.json"
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump({"nodes": nodes, "edges": edges}, f, ensure_ascii=False, indent=2)
+    print(f"garden: links.json -> {len(nodes)} nodes, {len(edges)} edges")
 
 
 # ---------------------------------------------------------------------------
@@ -241,15 +350,50 @@ def build_source_note(key, item, related_keys, by_key, citing_notes):
     tags_str = ", ".join(tags)
     related_block = "\n".join(related_lines(related_keys, by_key))
     cited_block = "\n".join(cited_lines(citing_notes))
+
+    abstract = fmt_abstract(item)
+
+    publisher = (item.get("publisher") or item.get("institution") or
+                 item.get("container-title") or "")
+    year      = fmt_year(item)
+    isbn      = item.get("ISBN", "")
+    doi       = item.get("DOI", "")
+
+    author = fmt_authors(item)
+
+    # YAML extra fields (machine-readable)
+    extra_yaml = ""
+    if publisher: extra_yaml += f'publisher: "{publisher.replace(chr(34), chr(39))}"\n'
+    if year:      extra_yaml += f"year: {year}\n"
+    if isbn:      extra_yaml += f'isbn: "{isbn}"\n'
+    if doi:       extra_yaml += f'doi: "{doi}"\n'
+
+    # Body display fields
+    meta_fields = []
+    if author and author != "Unknown":
+        meta_fields.append(f"**Author:** {author}")
+    if publisher:
+        meta_fields.append(f"**Publisher:** {publisher}")
+    if year:
+        meta_fields.append(f"**Date:** {year}")
+    if isbn:
+        meta_fields.append(f"**ISBN:** {isbn}")
+    if doi:
+        meta_fields.append(f"**DOI:** [{doi}](https://doi.org/{doi})")
+
+    meta_block     = "  \n".join(meta_fields) + "\n\n" if meta_fields else ""
+    abstract_block = f"**Abstract:** {abstract}\n\n" if abstract else ""
+
     return (
         f'---\n'
         f'type: source\n'
         f'title: "{title}"\n'
-        f'authors: "{fmt_authors(item)}"\n'
-        f'year: {fmt_year(item)}\n'
         f'zotero-key: {key}\n'
         f'tags: [{tags_str}]\n'
+        f'{extra_yaml}'
         f'---\n\n'
+        f'{meta_block}'
+        f'{abstract_block}'
         f'## Related to\n\n'
         f'{related_block}\n\n'
         f'## Cited in\n\n'
@@ -275,20 +419,28 @@ def update_cited_in(content, citing_notes):
 # ---------------------------------------------------------------------------
 
 def main():
-    # Rename notes first so scan_citations picks up the final filenames.
+    # Step 1: Rename notes (no library needed).
     if NOTES_DIR.exists():
         rename_writing_notes()
-
-    if not check_library():
-        return
 
     if not NOTES_DIR.exists():
         return
 
     SOURCES_DIR.mkdir(parents=True, exist_ok=True)
 
-    by_key, uri_to_key = load_library()
+    # Step 2: Scan citations (no library needed).
     citations = scan_citations()
+
+    # Step 3: Load library if available.
+    has_library = check_library()
+    by_key, uri_to_key = load_library() if has_library else ({}, {})
+
+    # Step 4: Emit links.json (works with or without library).
+    emit_links_json(citations, by_key)
+
+    # Step 5: Source note generation (requires library).
+    if not has_library:
+        return
 
     created = updated = skipped = 0
 

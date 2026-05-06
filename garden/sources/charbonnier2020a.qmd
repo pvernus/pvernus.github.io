@@ -1,0 +1,20 @@
+---
+type: source
+title: "Abondance et liberté : Une histoire environnementale des idées politiques"
+zotero-key: charbonnier2020a
+tags: []
+publisher: "La Découverte"
+year: 2020
+---
+
+**Author:** Charbonnier  
+**Publisher:** La Découverte  
+**Date:** 2020
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-04-17](../notes/2026-04-17.qmd)

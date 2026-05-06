@@ -1,0 +1,32 @@
+---
+type: source
+title: "Contre l’écologie de guerre"
+zotero-key: rissier2026a
+tags: []
+publisher: "La Dispute"
+year: 2026
+isbn: "978-2-84303-355-1"
+---
+
+**Author:** Rissier  
+**Publisher:** La Dispute  
+**Date:** 2026  
+**ISBN:** 978-2-84303-355-1
+
+**Abstract:** Au tournant des années 2020, l’écologie se retrouve au cœur des tensions internationales. Alors que la Chine se dit engagée dans la voie de la civilisation écologique, Trump et Poutine semblent incarner la résistance d’une coalition fossile déterminée à ne rien lâcher.
+
+Dans ce contexte a émergé l’écologie de guerre, qui défend que le retour des guerres entre grandes puissances représenterait une opportunité pour la transition écologique. En prônant la convergence entre intérêts écologiques et intérêts sécuritaires, ce nouveau paradigme sortirait l’Europe de l’impasse géopolitique et le mouvement climat de l’impuissance politique.
+
+Vincent Rissier mène la critique de cette écologie de guerre théorisée par le philosophe Pierre Charbonnier et défendue par des acteurs divers, de Raphaël Glucksmann aux Verts de Marine Tondelier en passant par la Commission européenne. Dans la perspective d’une écologie anticapitaliste et en s’appuyant sur les travaux récents de l’environnementalisme critique et du marxisme écologique, l’auteur appelle le mouvement écologiste à renouer avec ses traditions anti-impérialistes pour participer à la construction d’un vaste mouvement anti-guerre en France.
+
+Vincent Rissier est militant écologiste.
+
+Avec une préface de Paul Guillibert, philosophe.
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-04-17](../notes/2026-04-17.qmd)

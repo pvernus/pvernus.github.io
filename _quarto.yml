@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - profile-dark.jpg
+    - garden/links.json
   pre-render: _pre-render.py
 
 website:

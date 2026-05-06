@@ -1,0 +1,22 @@
+---
+type: source
+title: "From Polycrisis to Polytunity"
+zotero-key: ang2026a
+tags: []
+publisher: "Polytunity"
+year: 2026
+---
+
+**Author:** Ang  
+**Publisher:** Polytunity  
+**Date:** 2026
+
+**Abstract:** Keynote at the Development Studies Association (Part 1)
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-04-17](../notes/2026-04-17.qmd)

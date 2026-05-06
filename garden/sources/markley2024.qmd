@@ -1,0 +1,24 @@
+---
+type: source
+title: "Le déluge: roman"
+zotero-key: markley2024
+tags: []
+publisher: "Albin Michel"
+year: 2024
+isbn: "978-2-226-47556-5"
+---
+
+**Author:** Markley & Recoursé  
+**Publisher:** Albin Michel  
+**Date:** 2024  
+**ISBN:** 978-2-226-47556-5
+
+**Abstract:** Vous tenez entre vos mains l'avenir de notre monde.Californie, 2013. Tony Pietrus, auteur d'un livre-choc sur le dérèglement climatique, reçoit des menaces de mort. Provocation, canular, avertissement ? Le scientifique, qui a prophétisé le chaos à venir, se heurte en effet à un profond déni et assiste, impuissant, à la destruction de la planète. Des supertyphons aux mégafeux, du complotisme antiécologique au capitalisme de surveillance, catastrophes et violences précipitent l'humanité au bord du gouffre.C'est ce tableau spectaculaire que dresse Stephen Markley en croisant les destins de ses différents personnages sur plusieurs décennies. Ashir, génie de l'analyse prédictive ; Kate, militante écologiste devenue l'icône d'une génération ; Shane, membre d'une mystérieuse organisation « écoterroriste » ; Jacquelyn, publicitaire adepte du greenwashing ; Keeper, un junkie capable du pire pour se payer sa dose ; ou encore le Pasteur, un acteur hollywoodien reconverti en figure de proue de l'ultra-droite... Tous verront leur vie bouleversée par l'effondrement en cours. Roman-monde, page turner au suspense haletant, Le Déluge met le lecteur au défi : qu'êtes-vous prêts à sacrifier pour sauver l'humanité ?
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-04-17](../notes/2026-04-17.qmd)

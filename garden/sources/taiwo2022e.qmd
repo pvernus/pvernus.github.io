@@ -1,0 +1,24 @@
+---
+type: source
+title: "Reconsidering reparations: worldmaking in the case of climate crisis"
+zotero-key: taiwo2022e
+tags: []
+publisher: "Oxford University Press"
+year: 2022
+isbn: "978-0-19-750890-9"
+---
+
+**Author:** Táíwò  
+**Publisher:** Oxford University Press  
+**Date:** 2022  
+**ISBN:** 978-0-19-750890-9
+
+**Abstract:** "Christopher Columbus' voyage changed the world forever because the era of racial slavery and colonialism that it started built the world in the first place. The irreversible environmental damage of history's first planet-sized political and economic system is responsible for our present climate crisis. Reparations calls for us to make the world over again: this time, justly. The project of reparations and racial justice in the 21st century must take climate justice head on. The book develops arguments about the role of racial capitalism in global politics, addresses other views of reparations, and summarizes perspectives on environmental racism"--
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-04-17](../notes/2026-04-17.qmd)

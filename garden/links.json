@@ -1,0 +1,152 @@
+{
+  "nodes": [
+    {
+      "id": "2026-04-17",
+      "type": "writing",
+      "title": "2026-04-17",
+      "tags": [
+        "reparations",
+        "care",
+        "political-philosophy",
+        "ecology",
+        "utopia",
+        "FR"
+      ],
+      "path": "garden/notes/2026-04-17.html"
+    },
+    {
+      "id": "latour2017",
+      "type": "source",
+      "title": "Où Atterrir ? Comment S'orienter en Politique",
+      "path": "garden/sources/latour2017.html"
+    },
+    {
+      "id": "charbonnier2020a",
+      "type": "source",
+      "title": "Abondance et liberté : Une histoire environnementale des idées politiq",
+      "path": "garden/sources/charbonnier2020a.html"
+    },
+    {
+      "id": "gumbs2024",
+      "type": "source",
+      "title": "Non-noyées : Leçons féministes Noires apprises auprès des mammifères m",
+      "path": "garden/sources/gumbs2024.html"
+    },
+    {
+      "id": "rovere2017",
+      "type": "source",
+      "title": "Le clan Spinoza: Amsterdam, 1677 l'invention de la liberté",
+      "path": "garden/sources/rovere2017.html"
+    },
+    {
+      "id": "ang2026a",
+      "type": "source",
+      "title": "From Polycrisis to Polytunity",
+      "path": "garden/sources/ang2026a.html"
+    },
+    {
+      "id": "rissier2026a",
+      "type": "source",
+      "title": "Contre l’écologie de guerre",
+      "path": "garden/sources/rissier2026a.html"
+    },
+    {
+      "id": "obrien2022",
+      "type": "source",
+      "title": "Everything for everyone: an oral history of the New York commune, 2052",
+      "path": "garden/sources/obrien2022.html"
+    },
+    {
+      "id": "taiwo2022e",
+      "type": "source",
+      "title": "Reconsidering reparations: worldmaking in the case of climate crisis",
+      "path": "garden/sources/taiwo2022e.html"
+    },
+    {
+      "id": "robinson2020",
+      "type": "source",
+      "title": "The ministry for the future",
+      "path": "garden/sources/robinson2020.html"
+    },
+    {
+      "id": "markley2024",
+      "type": "source",
+      "title": "Le déluge: roman",
+      "path": "garden/sources/markley2024.html"
+    },
+    {
+      "id": "charbonnier2022a",
+      "type": "source",
+      "title": "La naissance de l’écologie de guerre",
+      "path": "garden/sources/charbonnier2022a.html"
+    },
+    {
+      "id": "charbonnier2026a",
+      "type": "source",
+      "title": "L'écologie de guerre totale",
+      "path": "garden/sources/charbonnier2026a.html"
+    }
+  ],
+  "edges": [
+    {
+      "source": "2026-04-17",
+      "target": "latour2017",
+      "type": "cites"
+    },
+    {
+      "source": "2026-04-17",
+      "target": "charbonnier2020a",
+      "type": "cites"
+    },
+    {
+      "source": "2026-04-17",
+      "target": "gumbs2024",
+      "type": "cites"
+    },
+    {
+      "source": "2026-04-17",
+      "target": "rovere2017",
+      "type": "cites"
+    },
+    {
+      "source": "2026-04-17",
+      "target": "ang2026a",
+      "type": "cites"
+    },
+    {
+      "source": "2026-04-17",
+      "target": "rissier2026a",
+      "type": "cites"
+    },
+    {
+      "source": "2026-04-17",
+      "target": "obrien2022",
+      "type": "cites"
+    },
+    {
+      "source": "2026-04-17",
+      "target": "taiwo2022e",
+      "type": "cites"
+    },
+    {
+      "source": "2026-04-17",
+      "target": "robinson2020",
+      "type": "cites"
+    },
+    {
+      "source": "2026-04-17",
+      "target": "markley2024",
+      "type": "cites"
+    },
+    {
+      "source": "2026-04-17",
+      "target": "charbonnier2022a",
+      "type": "cites"
+    },
+    {
+      "source": "2026-04-17",
+      "target": "charbonnier2026a",
+      "type": "cites"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+---
+type: source
+title: "Le clan Spinoza: Amsterdam, 1677 l'invention de la liberté"
+zotero-key: rovere2017
+tags: []
+publisher: "Flammarion"
+year: 2017
+isbn: "978-2-08-133072-6"
+---
+
+**Author:** Rovere  
+**Publisher:** Flammarion  
+**Date:** 2017  
+**ISBN:** 978-2-08-133072-6
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-04-17](../notes/2026-04-17.qmd)

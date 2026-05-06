@@ -1,0 +1,24 @@
+---
+type: source
+title: "Où Atterrir ? Comment S'orienter en Politique"
+zotero-key: latour2017
+tags: []
+publisher: "La Decouverte Editions"
+year: 2017
+isbn: "978-2-7071-9781-8"
+---
+
+**Author:** Latour  
+**Publisher:** La Decouverte Editions  
+**Date:** 2017  
+**ISBN:** 978-2-7071-9781-8
+
+**Abstract:** Peut-on continuer à faire de la politique comme si de rien n'était, comme si tout n'était pas en train de s'effondrer autour de nous?Dans ce court texte politique, Bruno Latour propose de nouveaux repères, matérialistes, enfin vraiment matérialistes, à tous ceux qui veulent échapper aux ruines de nos anciens modes de pensée
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-04-17](../notes/2026-04-17.qmd)

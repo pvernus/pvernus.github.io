@@ -1,0 +1,22 @@
+---
+type: source
+title: "Everything for everyone: an oral history of the New York commune, 2052-2072"
+zotero-key: obrien2022
+tags: []
+publisher: "Common Notions"
+year: 2022
+isbn: "978-1-942173-58-8"
+---
+
+**Author:** O'Brien & Abdelhadi  
+**Publisher:** Common Notions  
+**Date:** 2022  
+**ISBN:** 978-1-942173-58-8
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-04-17](../notes/2026-04-17.qmd)

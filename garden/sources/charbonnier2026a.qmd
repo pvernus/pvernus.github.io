@@ -1,0 +1,22 @@
+---
+type: source
+title: "L'écologie de guerre totale"
+zotero-key: charbonnier2026a
+tags: []
+publisher: "Le Grand Continent"
+year: 2026
+---
+
+**Author:** Charbonnier  
+**Publisher:** Le Grand Continent  
+**Date:** 2026
+
+**Abstract:** En accélérant la trajectoire impériale des États-Unis, Donald Trump vient-il de saboter les infrastructures fossiles globales ?  Si Trump est une ruse de la raison éco-terroriste — quelle histoire pouvons-nous raconter ?  Une pièce de doctrine signée Pierre Charbonnier.
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-04-17](../notes/2026-04-17.qmd)

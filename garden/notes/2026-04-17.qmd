@@ -1,6 +1,6 @@
 ---
 type: writing
-title: "Réparations"
+title: "2026-04-17"
 date: 2026-04-17
 tags: [reparations, care, political-philosophy, ecology, utopia, FR]
 ---

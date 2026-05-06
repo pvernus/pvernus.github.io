@@ -1,0 +1,24 @@
+---
+type: source
+title: "The ministry for the future"
+zotero-key: robinson2020
+tags: []
+publisher: "Orbit"
+year: 2020
+isbn: "978-0-316-30013-1"
+---
+
+**Author:** Robinson  
+**Publisher:** Orbit  
+**Date:** 2020  
+**ISBN:** 978-0-316-30013-1
+
+**Abstract:** "From legendary science fiction author Kim Stanley Robinson comes a vision of climate change unlike any ever imagined. Kim Stanley Robinson is one of contemporary science fiction's most acclaimed writers, and with this new novel, he once again turns his eye to themes of climate change, technology, politics, and the human behaviors that drive these forces. But his setting is not a desolate, post-apocalyptic world--rather, he imagines a more hopeful future, one where humanity has managed to overcome our challenges and thrive. It is a novel both immediate and impactful, perfect for his many fans and for readers who crave powerful and thought-provoking sci-fi stories"--
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-04-17](../notes/2026-04-17.qmd)

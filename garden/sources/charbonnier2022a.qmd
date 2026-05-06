@@ -1,0 +1,22 @@
+---
+type: source
+title: "La naissance de l’écologie de guerre"
+zotero-key: charbonnier2022a
+tags: []
+publisher: "Le Grand Continent"
+year: 2022
+---
+
+**Author:** Charbonnier  
+**Publisher:** Le Grand Continent  
+**Date:** 2022
+
+**Abstract:** L'invasion de l'Ukraine a ouvert une nouvelle matrice stratégique et politique pour les années Vingt. Pour que les politiques climatiques rencontrent l'histoire, l'écologie de guerre doit devenir une politique sociale.
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-04-17](../notes/2026-04-17.qmd)
