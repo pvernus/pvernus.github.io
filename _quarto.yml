@@ -7,6 +7,7 @@ project:
 website:
   title: "Paul Vernus"
   site-url: https://pvernus.github.io
+  favicon: favicon.ico
   navbar:
     background: "#F4F4F4"
     foreground: "dark"
