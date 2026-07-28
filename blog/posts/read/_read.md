@@ -1,6 +1,5 @@
 | Title | Author | Year | ISBN | Category |
 |--------------|--------------|--------------|--------------|----------------|
-| [Example article title](#) | Author Name | 2024 |  | <span class="tag">Category</span> |
 | *Everything for Everyone: An Oral History of the New York Commune, 2052–2072* | M.E. O'Brien | 2022 | 9781942173588 | [Science-fiction]{.tag} [EN]{.tag} |
 | *Photo de groupe au bord du fleuve* | Dongala Emmanuel | 2010 | 9782742789306 | [African literature]{.tag} [FR]{.tag} |
 | *By the rivers of Babylon* | Miller Kei | 2017 | 9782843048005 | [FR]{.tag} [Jamaica]{.tag} |

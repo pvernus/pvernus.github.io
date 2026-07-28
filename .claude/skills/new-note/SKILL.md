@@ -29,7 +29,12 @@ Optional: space- or comma-separated tags.
    Report: `"This will be note N for YYYY-MM-DD."` (where N = existing count + 1).
 
 3. **Parse tags** from `$ARGUMENTS`: split on spaces and/or commas, strip whitespace.
-   If no arguments, tags list is empty.
+   If no arguments, tags list is empty. Write them lowercase and kebab-case
+   (`climate-justice`, not `Climate Justice`) to match inherited tags.
+
+   Do NOT look up Zotero tags by hand. `_pre-render.py` inherits them from the
+   references the note cites on every render — see "Tag inheritance" below.
+   Arguments are for tags that are yours alone (`FR`, `utopia`, a project name).
 
 4. **Determine a safe filename**: try `garden/notes/YYYY-MM-DD-draft.qmd`.
    If that file already exists, try `YYYY-MM-DD-draft-2.qmd`, `-draft-3.qmd`, etc.
@@ -42,17 +47,41 @@ type: writing
 title: ""
 date: YYYY-MM-DD
 tags: [tag1, tag2]
-bibliography: _bib/library.json
 ---
 
 ```
 
    If no tags were provided, write `tags: []`.
 
+   Do NOT add a `bibliography:` field. `_quarto.yml` sets it project-wide to
+   `garden/_cited.json`; a per-note field would override it with a path that
+   does not exist in CI, and citations would render as literal `[@citekey]`.
+
 6. **Report**:
    - Path of the created file
    - Note count for today
    - One-line reminder: `"_pre-render.py will rename this to YYYY-MM-DD.qmd on next render."`
+
+## Tag inheritance
+
+Tags are not something to research by hand — `_pre-render.py` adds them automatically.
+
+On every render it reads the Zotero SQLite database, collects the tags of every
+reference the note cites with `@citekey`, and merges them into `tags:`. A tag carries
+over only if **at least 2** of the note's cited references share it, so a note's tags
+reflect its recurring themes rather than every subject its sources touch. A note citing
+a single tagged reference inherits that reference's tags outright.
+
+Tags are normalized to lowercase kebab-case, and workflow markers (`/unread`, `To Read`),
+plugin error tags (`⛔ No DOI found`), and JEL codes (`Q54`) are dropped.
+
+**Inheritance only ever adds.** Tags already in the file are preserved — but a tag
+removed by hand comes back on the next render if the citations still support it. To
+suppress one permanently, remove it in Zotero or add it to `STATUS_TAGS` in
+`_pre-render.py`.
+
+Requires the Zotero database at `~/Zotero/zotero.sqlite` (override with
+`ZOTERO_DATA_DIR`). Absent — as in CI — the step is skipped and tags are left alone.
 
 ## Notes
 

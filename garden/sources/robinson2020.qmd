@@ -2,7 +2,7 @@
 type: source
 title: "The ministry for the future"
 zotero-key: robinson2020
-tags: []
+tags: [climate-change, science-fiction]
 publisher: "Orbit"
 year: 2020
 isbn: "978-0-316-30013-1"

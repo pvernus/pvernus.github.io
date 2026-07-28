@@ -31,6 +31,17 @@ blockquote {
   color: #450920;
 }
 
+/* Footnotes and the reference list sit in #quarto-appendix, which each theme
+   paints its own colour — #fff in light, #222 in dark — leaving a visible block
+   against the page's #F4F4F4. Force both to match the page. */
+#quarto-appendix,
+#quarto-appendix.default,
+section.footnotes {
+  background-color: #F4F4F4 !important;
+  color: #333333 !important;
+  border-top-color: rgba(51, 51, 51, 0.2) !important;
+}
+
 /* === Dark mode: keep same visual appearance === */
 body.quarto-dark {
   background-color: #F4F4F4 !important;

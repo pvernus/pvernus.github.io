@@ -2,7 +2,7 @@
 type: source
 title: "Reconsidering reparations: worldmaking in the case of climate crisis"
 zotero-key: taiwo2022e
-tags: []
+tags: [environmental-justice, philosophy, reparations-for-historical-injustices]
 publisher: "Oxford University Press"
 year: 2022
 isbn: "978-0-19-750890-9"

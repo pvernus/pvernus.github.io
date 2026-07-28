@@ -9,3 +9,6 @@
 /.claude/handoff.md
 /.claude/session-log.md
 /.claude/state/
+
+# Python bytecode from _pre-render.py
+__pycache__/

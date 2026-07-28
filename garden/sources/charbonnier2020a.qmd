@@ -2,7 +2,7 @@
 type: source
 title: "Abondance et liberté : Une histoire environnementale des idées politiques"
 zotero-key: charbonnier2020a
-tags: []
+tags: [ecologie, liberté, philosophie-politique]
 publisher: "La Découverte"
 year: 2020
 ---
