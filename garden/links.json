@@ -15,6 +15,21 @@
       "path": "garden/notes/2026-04-17.html"
     },
     {
+      "id": "2026-07-28",
+      "type": "writing",
+      "title": "2026-07-28",
+      "tags": [
+        "china",
+        "ai",
+        "technology",
+        "openai",
+        "silicon-valley",
+        "open-source",
+        "soft-power"
+      ],
+      "path": "garden/notes/2026-07-28.html"
+    },
+    {
       "id": "latour2017",
       "type": "source",
       "title": "Où Atterrir ? Comment S'orienter en Politique",
@@ -85,6 +100,18 @@
       "type": "source",
       "title": "L'écologie de guerre totale",
       "path": "garden/sources/charbonnier2026a.html"
+    },
+    {
+      "id": "aresu2026",
+      "type": "source",
+      "title": "Le défi existentiel de Kimi",
+      "path": "garden/sources/aresu2026.html"
+    },
+    {
+      "id": "farrow2026",
+      "type": "source",
+      "title": "Sam Altman May Control Our Future—Can He Be Trusted?",
+      "path": "garden/sources/farrow2026.html"
     }
   ],
   "edges": [
@@ -146,6 +173,16 @@
     {
       "source": "2026-04-17",
       "target": "charbonnier2026a",
+      "type": "cites"
+    },
+    {
+      "source": "2026-07-28",
+      "target": "aresu2026",
+      "type": "cites"
+    },
+    {
+      "source": "2026-07-28",
+      "target": "farrow2026",
       "type": "cites"
     }
   ]

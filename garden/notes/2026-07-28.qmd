@@ -1,0 +1,26 @@
+---
+type: writing
+title: "2026-07-28"
+date: 2026-07-28
+tags: [china, ai, technology, openai, silicon-valley, open-source, soft-power]
+---
+
+In *Le Grand Continent*, Alessandro Aresu wrote a profile of Yang Zhilin, the CEO of Kimi, the Chinese AI firm, following the release of the firm's latest model: Kimi K3.
+
+Two things I find interesting in the article:
+
+1. The comparison between Yang Zhilin and Sam Altman, from the perspective of the loss of US soft power
+
+> “Si l’on compare le profil de Yang Zhilin à celui de Sam Altman, il est difficile de soutenir que le PDG d’OpenAI soit une personne plus intéressante que le fondateur de Moonshot AI.” [@aresu2026]
+
+> “Dans le même temps, comme le montrent les récentes enquêtes du Pew Research Center, le soft power des États-Unis décline à l’échelle mondiale.” [@aresu2026]
+
+> “C’est précisément dans le déploiement de ce « désir mimétique » et dans la compétition pour le talent que se joue la véritable partie de l’histoire de Kimi pas seulement, ni surtout, dans la performance face aux modèles américains, qui n’est qu’une partie du tout.” [@aresu2026]
+
+> “environ 90 % des Chinois titulaires d’un doctorat STEM américain obtenus entre 2000 et 2015 y résidaient encore aux États-Unis début 2017. Aujourd’hui cette dynamique s’inverse. Les nouveaux visas étudiants ont chuté de plus d’un tiers entre l’été 2024 et l’été 2025. En juillet, Washington a mis fin à la « duration of status », qui permettait depuis 1978 aux étudiants étrangers de rester tant que duraient leurs études. Au même moment, Pékin ouvrait son visa K, réservé aux jeunes talents scientifiques étrangers, sans même exiger d’offre d’emploi.” [@aresu2026]
+
+This made me think of the portrait of Sam Altman in *The New Yorker* by Ronan Farrow and Andrew Marantz [@farrow2026].
+
+2. The argument that researchers and developers are interested in open-source so that they can be remembered
+
+> “Comme l’a résumé l’ingénieur Wang Tiezhen : « Les chercheurs veulent qu’on se souvienne d’eux pour leurs percées. L’open source leur donne cela. »” [@aresu2026]

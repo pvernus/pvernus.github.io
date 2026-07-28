@@ -1,0 +1,22 @@
+---
+type: source
+title: "Sam Altman May Control Our Future—Can He Be Trusted?"
+zotero-key: farrow2026
+tags: []
+publisher: "The New Yorker"
+year: 2026
+---
+
+**Author:** Farrow & Marantz  
+**Publisher:** The New Yorker  
+**Date:** 2026
+
+**Abstract:** New interviews and closely guarded documents shed light on the persistent doubts about the head of OpenAI.
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-07-28](../notes/2026-07-28.qmd)

@@ -1,0 +1,22 @@
+---
+type: source
+title: "Le défi existentiel de Kimi"
+zotero-key: aresu2026
+tags: [ai, china, open-source, openai, silicon-valley, soft-power, technology]
+publisher: "Le Grand Continent"
+year: 2026
+---
+
+**Author:** Aresu  
+**Publisher:** Le Grand Continent  
+**Date:** 2026
+
+**Abstract:** Le plus grave danger pour la domination américaine est que la Silicon Valley cesse d'être le rêve du monde.
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-07-28](../notes/2026-07-28.qmd)
