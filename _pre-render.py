@@ -191,39 +191,6 @@ def fmt_tags(item):
     return [k.strip() for k in str(kw).split(",") if k.strip()]
 
 
-_TYPE_LABELS = {
-    "article-journal": "Article",
-    "book": "Book",
-    "chapter": "Book chapter",
-    "report": "Report",
-    "webpage": "Webpage",
-    "blogPost": "Blog post",
-    "thesis": "Thesis",
-    "preprint": "Preprint",
-    "conferencePaper": "Conference paper",
-    "videoRecording": "Video",
-    "podcast": "Podcast",
-    "radioBroadcast": "Radio broadcast",
-    "document": "Document",
-    "magazineArticle": "Magazine article",
-    "newspaperArticle": "Newspaper article",
-}
-
-
-def fmt_info(item):
-    """Return (info_line, link_md) for the source note body."""
-    itype = _TYPE_LABELS.get(item.get("type", ""), item.get("type", ""))
-    venue = (item.get("container-title") or
-             item.get("collection-title") or
-             item.get("publisher") or
-             item.get("institution") or "")
-    info = " · ".join(p for p in [itype, venue] if p)
-    doi = item.get("DOI", "")
-    url = item.get("URL", "")
-    link = f"[DOI](https://doi.org/{doi})" if doi else (f"[URL]({url})" if url else "")
-    return info, link
-
-
 def fmt_abstract(item):
     return (item.get("abstract") or "").strip()
 
