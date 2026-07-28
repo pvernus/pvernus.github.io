@@ -2,3 +2,10 @@
 /_site/
 **/*.quarto_ipynb
 /_bib/
+/garden/.voice/
+/garden/notes/.review/
+
+# Session state — machine-local per .claude/rules/meta-governance.md
+/.claude/handoff.md
+/.claude/session-log.md
+/.claude/state/

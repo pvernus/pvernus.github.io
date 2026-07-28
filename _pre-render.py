@@ -156,7 +156,7 @@ def scan_citations():
         m = re.search(r'^title:\s*["\']?(.+?)["\']?\s*$', text, re.MULTILINE)
         title = m.group(1).strip("\"'") if m else path.stem
         seen_in_note = set()
-        for key in re.findall(r'(?<!/)@([\w:.-]+)', text):
+        for key in re.findall(r'(?<!/)@([\w:-]+(?:\.[\w:-]+)*)', text):
             if key not in seen_in_note:
                 result.setdefault(key, []).append((path, title))
                 seen_in_note.add(key)
@@ -279,7 +279,7 @@ def emit_links_json(citations, by_key):
         m = re.search(r'^tags:\s*\[([^\]]*)\]', text, re.MULTILINE)
         raw_tags = [t.strip() for t in m.group(1).split(",")] if m else []
         tags = [t for t in raw_tags if t]
-        citekeys = set(re.findall(r'@([\w:.-]+)', text))
+        citekeys = set(re.findall(r'(?<!/)@([\w:-]+(?:\.[\w:-]+)*)', text))
         stem = path.stem
         nodes.append({
             "id": stem,

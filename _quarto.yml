@@ -1,5 +1,9 @@
 project:
   type: website
+  # Render only .qmd pages. Without this, Quarto sweeps up every .md in the
+  # repo — CLAUDE.md, MEMORY.md, quality_reports/ — and publishes them.
+  render:
+    - "**/*.qmd"
   resources:
     - profile-dark.jpg
     - garden/links.json
