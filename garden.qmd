@@ -54,10 +54,18 @@ graphData = fetch("garden/links.json")
     .attr("markerWidth", 5).attr("markerHeight", 5).attr("orient", "auto")
     .append("path").attr("d", "M0,-4L8,0L0,4").attr("fill", "#888");
 
+  // The graph is usually several disconnected clusters — a note links to its
+  // sources, and to other notes only through a shared tag or citation. Plain
+  // forceCenter just recentres the centroid without pulling anything, so
+  // unconnected clusters repel each other off-canvas. Two things prevent that:
+  // charge has a cutoff radius so repulsion stays local to a cluster, and
+  // forceX/forceY pull every node back toward the middle.
   const sim = d3.forceSimulation(nodes)
     .force("link", d3.forceLink(links).id(d => d.id).distance(95))
-    .force("charge", d3.forceManyBody().strength(-260))
+    .force("charge", d3.forceManyBody().strength(-260).distanceMax(300))
     .force("center", d3.forceCenter(W / 2, H / 2))
+    .force("x", d3.forceX(W / 2).strength(0.07))
+    .force("y", d3.forceY(H / 2).strength(0.07))
     .force("collision", d3.forceCollide(d => r(d) + 4));
 
   const link = svg.append("g")
@@ -98,7 +106,17 @@ graphData = fetch("garden/links.json")
     .attr("font-size", 9).attr("fill", "#555")
     .style("pointer-events", "none");
 
+  // Hard bound: whatever the forces do, no node leaves the frame. LABEL_ROOM
+  // reserves space to the right of a node so its title stays readable.
+  const LABEL_ROOM = 96;   // ~22 chars at font-size 9, the title truncation limit
+  const clamp = d => {
+    const rad = r(d) + 2;
+    d.x = Math.max(rad, Math.min(W - rad - LABEL_ROOM, d.x));
+    d.y = Math.max(rad, Math.min(H - rad, d.y));
+  };
+
   sim.on("tick", () => {
+    nodes.forEach(clamp);
     link
       .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
       .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
