@@ -112,6 +112,18 @@
       "type": "source",
       "title": "Sam Altman May Control Our Future—Can He Be Trusted?",
       "path": "garden/sources/farrow2026.html"
+    },
+    {
+      "id": "hao2026a",
+      "type": "source",
+      "title": "Toppling the AI Empire",
+      "path": "garden/sources/hao2026a.html"
+    },
+    {
+      "id": "schwope2025",
+      "type": "source",
+      "title": "A Socio-Ecological Vision for AI",
+      "path": "garden/sources/schwope2025.html"
     }
   ],
   "edges": [
@@ -183,6 +195,16 @@
     {
       "source": "2026-07-28",
       "target": "farrow2026",
+      "type": "cites"
+    },
+    {
+      "source": "2026-07-28",
+      "target": "hao2026a",
+      "type": "cites"
+    },
+    {
+      "source": "2026-07-28",
+      "target": "schwope2025",
       "type": "cites"
     }
   ]

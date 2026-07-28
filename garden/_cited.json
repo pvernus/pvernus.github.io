@@ -232,6 +232,46 @@
     "type": "book"
   },
   {
+    "id": "hao2026a",
+    "abstract": "Between the ambitions of global superpowers and AI giants, Europe has the opportunity to look for something better.",
+    "accessed": {
+      "date-parts": [
+        [
+          "2026",
+          7,
+          27
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Hao",
+        "given": "Karen"
+      }
+    ],
+    "citation-key": "hao2026a",
+    "interviewer": [
+      {
+        "family": "Giussani",
+        "given": "Alessio"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          "2026",
+          7,
+          9
+        ]
+      ]
+    },
+    "language": "en-US",
+    "medium": "Green European Journal",
+    "title": "Toppling the AI Empire",
+    "type": "interview",
+    "URL": "https://www.greeneuropeanjournal.eu/toppling-the-ai-empire/"
+  },
+  {
     "id": "latour2017",
     "abstract": "Peut-on continuer à faire de la politique comme si de rien n'était, comme si tout n'était pas en train de s'effondrer autour de nous?Dans ce court texte politique, Bruno Latour propose de nouveaux repères, matérialistes, enfin vraiment matérialistes, à tous ceux qui veulent échapper aux ruines de nos anciens modes de pensée",
     "author": [
@@ -398,6 +438,44 @@
     "title": "Le clan Spinoza: Amsterdam, 1677 l'invention de la liberté",
     "title-short": "Le clan Spinoza",
     "type": "book"
+  },
+  {
+    "id": "schwope2025",
+    "abstract": "We need a new narrative that foregrounds artificial intelligence as a public tool without pre-determined development and impact.",
+    "accessed": {
+      "date-parts": [
+        [
+          "2026",
+          7,
+          27
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Schwope",
+        "given": "Jonah"
+      },
+      {
+        "family": "Schröder",
+        "given": "Lena"
+      }
+    ],
+    "citation-key": "schwope2025",
+    "container-title": "Green European Journal",
+    "issued": {
+      "date-parts": [
+        [
+          "2025",
+          10,
+          16
+        ]
+      ]
+    },
+    "language": "en-US",
+    "title": "A Socio-Ecological Vision for AI",
+    "type": "post-weblog",
+    "URL": "https://www.greeneuropeanjournal.eu/a-socio-ecological-vision-for-ai/"
   },
   {
     "id": "taiwo2022e",

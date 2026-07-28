@@ -1,0 +1,22 @@
+---
+type: source
+title: "A Socio-Ecological Vision for AI"
+zotero-key: schwope2025
+tags: [ai-accelerationism, ai-capitalism, ai-directionism, ai-futurism, ai-stack, artificial-general-intelligence, co2-lock-in, collective-action, commons, decolonial, digital-silk-road, ecological-costs, interoperability, mission-oriented-governance, open-source, power-concentration, principle-of-proportionality, progress-trap, racing-standstill, reflexive-knowledge, resource-efficiency, socio-material-system, tech-cold-war, transformative-knowledge, transparency]
+publisher: "Green European Journal"
+year: 2025
+---
+
+**Author:** Schwope & Schröder  
+**Publisher:** Green European Journal  
+**Date:** 2025
+
+**Abstract:** We need a new narrative that foregrounds artificial intelligence as a public tool without pre-determined development and impact.
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-07-28](../notes/2026-07-28.qmd)

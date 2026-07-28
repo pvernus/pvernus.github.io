@@ -1,0 +1,20 @@
+---
+type: source
+title: "Toppling the AI Empire"
+zotero-key: hao2026a
+tags: [ai, empire, openai, technology]
+year: 2026
+---
+
+**Author:** Hao  
+**Date:** 2026
+
+**Abstract:** Between the ambitions of global superpowers and AI giants, Europe has the opportunity to look for something better.
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-07-28](../notes/2026-07-28.qmd)
