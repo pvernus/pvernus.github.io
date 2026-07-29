@@ -68,6 +68,40 @@
     "URL": "https://legrandcontinent.eu/fr/2026/07/27/le-defi-existentiel-de-kimi/"
   },
   {
+    "id": "broca2026",
+    "abstract": "par Sébastien Broca (avril 2026)",
+    "accessed": {
+      "date-parts": [
+        [
+          "2026",
+          7,
+          29
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Broca",
+        "given": "Sébastien"
+      }
+    ],
+    "citation-key": "broca2026",
+    "container-title": "Le Monde diplomatique",
+    "issued": {
+      "date-parts": [
+        [
+          "2026",
+          4,
+          1
+        ]
+      ]
+    },
+    "language": "fr",
+    "title": "Les noces de l'IA et de l'État",
+    "type": "article-newspaper",
+    "URL": "https://www.monde-diplomatique.fr/2026/04/BROCA/69462"
+  },
+  {
     "id": "charbonnier2020a",
     "author": [
       {

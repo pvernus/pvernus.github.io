@@ -120,6 +120,12 @@
       "path": "garden/sources/hao2026a.html"
     },
     {
+      "id": "broca2026",
+      "type": "source",
+      "title": "Les noces de l'IA et de l'État",
+      "path": "garden/sources/broca2026.html"
+    },
+    {
       "id": "schmidt2026a",
       "type": "source",
       "title": "Blocked in Europe, deployed abroad: The facial recognition system moni",
@@ -217,6 +223,11 @@
     {
       "source": "2026-07-28",
       "target": "hao2026a",
+      "type": "cites"
+    },
+    {
+      "source": "2026-07-28",
+      "target": "broca2026",
       "type": "cites"
     },
     {

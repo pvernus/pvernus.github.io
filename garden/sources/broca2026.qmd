@@ -1,0 +1,22 @@
+---
+type: source
+title: "Les noces de l'IA et de l'État"
+zotero-key: broca2026
+tags: [ia, imperialism, state-capitalism, technofascism, technofeodalism]
+publisher: "Le Monde diplomatique"
+year: 2026
+---
+
+**Author:** Broca  
+**Publisher:** Le Monde diplomatique  
+**Date:** 2026
+
+**Abstract:** par Sébastien Broca (avril 2026)
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-07-28](../notes/2026-07-28.qmd)
