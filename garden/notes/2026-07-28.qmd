@@ -25,9 +25,9 @@ It also relates to an interview with Karen Hao, author of Empire of AI, which wa
 
 Sébastien Broca has also made the link between AI and imperialism in an article in Le Monde Diplomatique.
 
-With the US and China's soft power in full swing, what should the EU's strategic position be? [@schwope2025]
+With the US and China's soft power in full swing, what should the EU's strategic position be? For now, Europe's approach has been to restrict AI technologies domestically while exporting those that are currently forbidden at home. See, for example, @schmidt2026a and @schmidt2026.
 
-For now, Europe's approach has been to restrict AI technologies domestically while exporting those that are currently forbidden at home. See, for example, @schmidt2026a and @schmidt2026.
+Jonah Schwope and Lena Schröder call for a "socio-ecological vision for AI [@schwope2025]. This could be linked to @charbonnier2020a's work on the ideology of freedom and liberty through material and technological progress.
 
 2. The argument that researchers and developers are interested in open-source so that they can be remembered
 

@@ -112,6 +112,21 @@ publish "Add new book to list"
   doesn't know (`FR`, `utopia`). Inheritance only adds — it never removes.
 - Tag data comes from the Zotero database, **not** `library.json` — Zotero's CSL JSON
   export drops tags entirely, so every entry lacks the `keyword` field
+- **Voice learns from Zotero highlights, not from source prose.** `/voice study` mines
+  highlights on cited works into `garden/.voice/candidates.md`, which `/voice mentor`
+  turns into forced-choice questions. Citation is not admiration — most cited works are
+  journal prose the profile bans, so only the *selection* within a source counts
+- **Highlights live in three stores, and all three must be read.** (1) attachment
+  annotations on PDFs and EPUBs, via `zotero_get_annotations`; (2) `background-color`
+  spans inside a Zotero note, where print-read books and FR sources land; (3) e-reader
+  exports pasted into a note under the sentinel first line `Highlights export`, plain
+  text with no colour. Reading only store 1 silently discards the FR and book half of
+  the library — that was the Run 1 bug
+- **Highlight colour taxonomy (user-confirmed):** yellow `#ffd400` = full-sentence claim,
+  purple `#a28ae5` = thesis, blue `#2ea8e5` = number / empirical fact, orange `#f19837` =
+  concept, green `#5fb236` = citation to chase. Yellow, purple and blue pool for style
+  metrics; blue density is the anchoring measure, so it is computed over the coloured
+  stores only
 - See `_garden-workflow.md` for full setup instructions and note conventions
 
 ### Images

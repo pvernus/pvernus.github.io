@@ -88,6 +88,16 @@ If any qualify, print one line at the end:
 
 If nothing qualifies, say nothing. `/done` never writes to `MEMORY.md` itself — that is `/tools learn`'s job. Keeping this step passive prevents low-signal pollution of shared memory.
 
+**Step 7: Suggest `/voice study` (passive — do not auto-invoke)**
+
+If the session added or modified any `garden/notes/*.qmd`, compare the `@citekey`s they cite against the `studied:` list in `garden/.voice/candidates.md` (skip this step silently if that file does not exist and no note was touched).
+
+If unstudied citekeys exist, print one line at the end:
+
+> *Consider running `/voice study` — N cited source(s) not yet mined for voice candidates: [citekeys]*
+
+Passive by design. `/voice study` is a checkpoint activity that rewards batching — the ≥3-confirmation sedimentation rule needs a volume of decisions, and volume comes from sweeping several sources at once rather than one per session.
+
 ---
 
 ### Argument modifiers

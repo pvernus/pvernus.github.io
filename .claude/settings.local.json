@@ -20,7 +20,8 @@
       "WebFetch(domain:grantmcdermott.com)",
       "PowerShell(zot *)",
       "mcp__zotero__search",
-      "mcp__zotero__stats"
+      "mcp__zotero__stats",
+      "mcp__zotero__zotero_get_notes"
     ]
   },
   "enabledMcpjsonServers": [
