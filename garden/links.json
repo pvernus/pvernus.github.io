@@ -124,6 +124,18 @@
       "type": "source",
       "title": "A Socio-Ecological Vision for AI",
       "path": "garden/sources/schwope2025.html"
+    },
+    {
+      "id": "schmidt2026a",
+      "type": "source",
+      "title": "Blocked in Europe, deployed abroad: The facial recognition system moni",
+      "path": "garden/sources/schmidt2026a.html"
+    },
+    {
+      "id": "schmidt2026",
+      "type": "source",
+      "title": "Made in Spain: Surveillance tech banned in EU booms in India",
+      "path": "garden/sources/schmidt2026.html"
     }
   ],
   "edges": [
@@ -205,6 +217,16 @@
     {
       "source": "2026-07-28",
       "target": "schwope2025",
+      "type": "cites"
+    },
+    {
+      "source": "2026-07-28",
+      "target": "schmidt2026a",
+      "type": "cites"
+    },
+    {
+      "source": "2026-07-28",
+      "target": "schmidt2026",
       "type": "cites"
     }
   ]

@@ -440,6 +440,88 @@
     "type": "book"
   },
   {
+    "id": "schmidt2026",
+    "abstract": "From Delhi to Jaipur, India is rolling out facial recognition technology to monitor millions of its citizens. Investigate Europe has found that behind much of the software is Spanish company Herta Security – but critics argue the government promise of public safety is not the main aim.",
+    "accessed": {
+      "date-parts": [
+        [
+          "2026",
+          7,
+          29
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Schmidt",
+        "given": "Nico"
+      },
+      {
+        "family": "Aggarwal",
+        "given": "Mayank"
+      },
+      {
+        "family": "Carrascón",
+        "given": "Ignacio"
+      }
+    ],
+    "citation-key": "schmidt2026",
+    "container-title": "Investigate Europe",
+    "issued": {
+      "date-parts": [
+        [
+          "2026",
+          7,
+          15
+        ]
+      ]
+    },
+    "language": "en",
+    "title": "Made in Spain: Surveillance tech banned in EU booms in India",
+    "title-short": "Made in Spain",
+    "type": "post-weblog",
+    "URL": "https://www.investigate-europe.eu/posts/made-in-spain-surveillance-tech-banned-in-eu-booms-in-india?pk_kwd=AI%20Surveillance_India"
+  },
+  {
+    "id": "schmidt2026a",
+    "abstract": "As Europe tries to restrict AI technologies at home, systems developed on the continent are being rolled out overseas. Investigate Europe tracks how Europe-made biometric software has embedded itself into Brazil’s education sector – with potential consequences far beyond the classroom.",
+    "accessed": {
+      "date-parts": [
+        [
+          "2026",
+          7,
+          29
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Schmidt",
+        "given": "Nico"
+      },
+      {
+        "family": "Coelho",
+        "given": "Leonardo"
+      }
+    ],
+    "citation-key": "schmidt2026a",
+    "container-title": "Investigate Europe",
+    "issued": {
+      "date-parts": [
+        [
+          "2026",
+          3,
+          13
+        ]
+      ]
+    },
+    "language": "en",
+    "title": "Blocked in Europe, deployed abroad: The facial recognition system monitoring Brazil’s schoolchildren",
+    "title-short": "Blocked in Europe, deployed abroad",
+    "type": "post-weblog",
+    "URL": "https://www.investigate-europe.eu/posts/facial-recognition-software-ai-europe-brazil-school-children"
+  },
+  {
     "id": "schwope2025",
     "abstract": "We need a new narrative that foregrounds artificial intelligence as a public tool without pre-determined development and impact.",
     "accessed": {

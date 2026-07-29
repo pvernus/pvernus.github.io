@@ -1,0 +1,22 @@
+---
+type: source
+title: "Made in Spain: Surveillance tech banned in EU booms in India"
+zotero-key: schmidt2026
+tags: []
+publisher: "Investigate Europe"
+year: 2026
+---
+
+**Author:** Schmidt et al.  
+**Publisher:** Investigate Europe  
+**Date:** 2026
+
+**Abstract:** From Delhi to Jaipur, India is rolling out facial recognition technology to monitor millions of its citizens. Investigate Europe has found that behind much of the software is Spanish company Herta Security – but critics argue the government promise of public safety is not the main aim.
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-07-28](../notes/2026-07-28.qmd)

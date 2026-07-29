@@ -1,0 +1,22 @@
+---
+type: source
+title: "Blocked in Europe, deployed abroad: The facial recognition system monitoring Brazil’s schoolchildren"
+zotero-key: schmidt2026a
+tags: []
+publisher: "Investigate Europe"
+year: 2026
+---
+
+**Author:** Schmidt & Coelho  
+**Publisher:** Investigate Europe  
+**Date:** 2026
+
+**Abstract:** As Europe tries to restrict AI technologies at home, systems developed on the continent are being rolled out overseas. Investigate Europe tracks how Europe-made biometric software has embedded itself into Brazil’s education sector – with potential consequences far beyond the classroom.
+
+## Related to
+
+<!-- none yet -->
+
+## Cited in
+
+- [2026-07-28](../notes/2026-07-28.qmd)

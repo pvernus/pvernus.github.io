@@ -21,9 +21,13 @@ Two things I find interesting in the article:
 
 This made me think of the portrait of Sam Altman in *The New Yorker* by Ronan Farrow and Andrew Marantz [@farrow2026].
 
-It also relates to an interview with Karen Hao, author of *Empire of AI*, conducted by Alessio Giussani and published in the *Green European Journal* [@hao2026a]. Hao discusses the link between US soft power and the AI Empire.
+It also relates to an interview with Karen Hao, author of Empire of AI, which was conducted by Alessio Giussani and published in the Green European Journal [@hao2026a]. In the interview, Hao discusses the link between US soft power and the AI Empire.
+
+Sébastien Broca has also made the link between AI and imperialism in an article in Le Monde Diplomatique.
 
 With the US and China's soft power in full swing, what should the EU's strategic position be? [@schwope2025]
+
+For now, Europe's approach has been to restrict AI technologies domestically while exporting those that are currently forbidden at home. See, for example, @schmidt2026a and @schmidt2026.
 
 2. The argument that researchers and developers are interested in open-source so that they can be remembered
 
